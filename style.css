@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    /* font-family: "Varela Round", sans-serif; */
+}
+
+nav {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+nav ul {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.brand img {
+    width: 40px;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: #f9ebd7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .song-list {
+    width: 55%;
+    padding: 10px;
+}
+
+.song-list .song {
+    position: relative;
+    width: 550px;
+    padding: 3px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.song .song-image {
+    padding-top: 2px;
+}
+
+.song .song-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.song .song-name{
+    z-index: 1;
+}
+
+.song .duration-and-icon{
+    display: flex;
+    gap: 30px;
+}
+.song .audio{
+    position: absolute;
+    left: 25%;
+    z-index: 0;
+    opacity: 0;
+}
+
+.container .song-banner {
+    width: 45%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.bottom {
+    position: static;
+    bottom: 0;
+    height: 90px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+.bottom input{
+    width: 70%;
+}
+
+.bottom .play-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.play-icons i {
+    padding-left: 10px;
+}
+
+.play-icons i:active {
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+#progressbar {
+    width: 80%;
+}
